@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gradient: linear-gradient(45deg, #fc00ff, #00dbde);
+}
+
+body {
+  min-height: 100vh;
+  background-image: var(--gradient);
+  background-size: 400%;
+  animation: bg-animation 10s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
